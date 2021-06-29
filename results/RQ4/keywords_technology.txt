@@ -1,0 +1,180 @@
+Architectural component behavior and structure
+type & 17 \\\hline
+add & 16 \\\hline
+would & 14 \\\hline
+change & 12 \\\hline
+could & 11 \\\hline
+use & 11 \\\hline
+dependency & 11 \\\hline
+instead & 11 \\\hline
+version & 11 \\\hline
+also & 10 \\\hline
+
+Architectural design configuration
+version & 33 \\\hline
+would & 29 \\\hline
+change & 26 \\\hline
+new & 24 \\\hline
+use & 22 \\\hline
+one & 20 \\\hline
+also & 17 \\\hline
+jar & 17 \\\hline
+make & 16 \\\hline
+result & 16 \\\hline
+
+Architectural solution benefits and drawbacks
+would & 93 \\\hline
+version & 93 \\\hline
+good & 75 \\\hline
+change & 75 \\\hline
++1 & 63 \\\hline
+think & 60 \\\hline
+new & 57 \\\hline
+use & 57 \\\hline
+make & 56 \\\hline
+also & 56 \\\hline
+
+Architectural tactics
+faster & 9 \\\hline
+http & 8 \\\hline
+ratio & 8 \\\hline
+performance & 7 \\\hline
+compression & 5 \\\hline
+also & 5 \\\hline
+data & 4 \\\hline
+use & 4 \\\hline
+benchmark & 4 \\\hline
+result & 4 \\\hline
+
+Assumptions
+think & 61 \\\hline
+version & 22 \\\hline
+change & 19 \\\hline
+would & 15 \\\hline
+make & 14 \\\hline
+case & 11 \\\hline
+probably & 10 \\\hline
+new & 10 \\\hline
+use & 10 \\\hline
+http & 10 \\\hline
+
+Contextual constraints
+Cassandra & 2 \\\hline
+Fedora & 2 \\\hline
+3.11.0 & 1 \\\hline
+included & 1 \\\hline
+There & 1 \\\hline
+tweak & 1 \\\hline
+source & 1 \\\hline
+need & 1 \\\hline
+order & 1 \\\hline
+successfully & 1 \\\hline
+
+Existing system architecture description
+use & 4 \\\hline
+already & 4 \\\hline
+Cassandra & 3 \\\hline
+actually & 3 \\\hline
+reporter & 3 \\\hline
+available & 3 \\\hline
+using & 3 \\\hline
+memory & 3 \\\hline
+support & 2 \\\hline
+hint & 2 \\\hline
+
+Motivation of design issue
+version & 14 \\\hline
+issue & 10 \\\hline
+http & 10 \\\hline
+think & 8 \\\hline
+since & 7 \\\hline
+support & 7 \\\hline
+seems & 7 \\\hline
+problem & 7 \\\hline
+case & 7 \\\hline
+dependency & 7 \\\hline
+
+Other system architectural solutions
+Tomcat & 3 \\\hline
+linked & 2 \\\hline
+approach & 2 \\\hline
+EB & 2 \\\hline
+used & 2 \\\hline
+us & 2 \\\hline
+checksum & 2 \\\hline
+Elasticsearch & 1 \\\hline
+ticket & 1 \\\hline
+build & 1 \\\hline
+
+Risks
+user & 4 \\\hline
+put & 2 \\\hline
+risk & 2 \\\hline
+thousand & 2 \\\hline
+existing & 2 \\\hline
+bug & 2 \\\hline
+deployment & 2 \\\hline
+sure & 2 \\\hline
+issue & 2 \\\hline
+careful & 2 \\\hline
+
+Run-time quality issues
+Cassandra & 17 \\\hline
+issue & 12 \\\hline
+version & 12 \\\hline
+node & 11 \\\hline
+http & 9 \\\hline
+image & 9 \\\hline
+cache & 7 \\\hline
+problem & 7 \\\hline
+data & 7 \\\hline
+class & 7 \\\hline
+
+Technical debt
+Jackson & 7 \\\hline
+test & 6 \\\hline
+version & 5 \\\hline
+like & 4 \\\hline
+codehaus & 4 \\\hline
+Java & 4 \\\hline
+need & 3 \\\hline
+check & 3 \\\hline
+And & 3 \\\hline
+really & 3 \\\hline
+
+Technology solution
+http & 39 \\\hline
+version & 39 \\\hline
+upgrade & 23 \\\hline
+Upgrade & 18 \\\hline
+latest & 17 \\\hline
+patch & 15 \\\hline
+change & 15 \\\hline
+use & 15 \\\hline
+support & 14 \\\hline
+test & 13 \\\hline
+
+Trade-offs
+mean & 2 \\\hline
+change & 2 \\\hline
+TBH & 1 \\\hline
+big & 1 \\\hline
+fan & 1 \\\hline
+either & 1 \\\hline
+solution & 1 \\\hline
+nasty & 1 \\\hline
+right & 1 \\\hline
+agree & 1 \\\hline
+
+User requirement
+init & 5 \\\hline
+hint & 4 \\\hline
+user & 4 \\\hline
+data & 3 \\\hline
+center & 3 \\\hline
+would & 3 \\\hline
+helpful & 2 \\\hline
+put & 2 \\\hline
+DC & 2 \\\hline
+cassandra & 2 \\\hline
+

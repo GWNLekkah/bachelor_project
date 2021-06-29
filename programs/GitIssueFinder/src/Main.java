@@ -1,0 +1,29 @@
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * Class that contains the main function.
+ */
+public class Main {
+    /**
+     * Print all Git commit messages from commits in the input file.
+     * @param args program arguments
+     */
+    public static void main(String[] args) throws IOException, InterruptedException {
+        Arguments.setGitProgramLocation(args[1]);
+        Arguments.setGitRepositoryLocation(args[2]);
+        Arguments.setIssueName(args[3]);
+        Arguments.setOutputFile("output.txt");
+
+        // delete old output file to overwrite it
+        File file = new File(Arguments.getOutputFile());
+        file.delete();
+
+        // create a pool of work from the input file
+        WorkPool workPool = new WorkPool(args[0]);
+
+        // create worker that pulls work from the WorkPool
+        Worker worker = new Worker(workPool);
+        worker.work();
+    }
+}

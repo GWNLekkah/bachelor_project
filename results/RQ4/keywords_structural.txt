@@ -1,0 +1,192 @@
+Architectural component behavior and structure
+would & 95 \\\hline
+column & 55 \\\hline
+could & 54 \\\hline
+use & 51 \\\hline
+one & 50 \\\hline
+think & 50 \\\hline
+key & 50 \\\hline
+need & 49 \\\hline
+range & 44 \\\hline
+method & 44 \\\hline
+
+Architectural design configuration
+would & 158 \\\hline
+node & 131 \\\hline
+column & 104 \\\hline
+one & 94 \\\hline
+need & 84 \\\hline
+could & 79 \\\hline
+version & 78 \\\hline
+make & 76 \\\hline
+row & 75 \\\hline
+think & 75 \\\hline
+
+Architectural solution benefits and drawbacks
+would & 251 \\\hline
+think & 196 \\\hline
+make & 136 \\\hline
+one & 135 \\\hline
+like & 120 \\\hline
+need & 113 \\\hline
+node & 109 \\\hline
+version & 103 \\\hline
+use & 102 \\\hline
+good & 99 \\\hline
+
+Architectural tactics
+would & 25 \\\hline
+performance & 14 \\\hline
+need & 13 \\\hline
+make & 13 \\\hline
+could & 12 \\\hline
+efcient & 12 \\\hline
+index & 12 \\\hline
+one & 11 \\\hline
+faster & 10 \\\hline
+read & 10 \\\hline
+
+Assumptions
+think & 162 \\\hline
+would & 61 \\\hline
+need & 47 \\\hline
+make & 41 \\\hline
+node & 36 \\\hline
+get & 30 \\\hline
+one & 28 \\\hline
+since & 28 \\\hline
+row & 28 \\\hline
+version & 27 \\\hline
+
+Contextual constraints
+node & 3 \\\hline
+need & 3 \\\hline
+able & 3 \\\hline
+column & 3 \\\hline
+blocked & 2 \\\hline
+CASSANDRA-242 & 2 \\\hline
+time & 2 \\\hline
+deletes & 2 \\\hline
+view & 2 \\\hline
+cf & 2 \\\hline
+
+Existing system architecture description
+node & 40 \\\hline
+tree & 40 \\\hline
+range & 27 \\\hline
+query & 24 \\\hline
+row & 21 \\\hline
+method & 20 \\\hline
+data & 19 \\\hline
+schema & 18 \\\hline
+need & 15 \\\hline
+perfect & 15 \\\hline
+
+Motivation of design issue
+problem & 16 \\\hline
+need & 16 \\\hline
+column & 15 \\\hline
+value & 11 \\\hline
+would & 10 \\\hline
+get & 8 \\\hline
+see & 8 \\\hline
+change & 8 \\\hline
+L1 & 8 \\\hline
+issue & 7 \\\hline
+
+Other system architectural solutions
+fles & 22 \\\hline
+http & 20 \\\hline
+level & 20 \\\hline
+fle & 19 \\\hline
+compaction & 14 \\\hline
+level- & 10 \\\hline
+L+1 & 10 \\\hline
+read & 8 \\\hline
+index & 8 \\\hline
+level-0 & 8 \\\hline
+
+Quality Attribute requirement
+pluggable & 3 \\\hline
+support & 3 \\\hline
+range & 3 \\\hline
+need & 2 \\\hline
+make & 2 \\\hline
+bulk & 2 \\\hline
+loading & 2 \\\hline
+Provide & 2 \\\hline
+internode & 2 \\\hline
+communication & 2 \\\hline
+
+Risks
+data & 3 \\\hline
+work & 3 \\\hline
+node & 2 \\\hline
+two & 2 \\\hline
+secondary & 2 \\\hline
+index & 2 \\\hline
+probably & 2 \\\hline
+want & 2 \\\hline
+like & 2 \\\hline
+might & 2 \\\hline
+
+Run-time quality issues
+key & 28 \\\hline
+get & 25 \\\hline
+junit & 20 \\\hline
+one & 18 \\\hline
+row & 18 \\\hline
+node & 17 \\\hline
+column & 17 \\\hline
+value & 16 \\\hline
+test & 15 \\\hline
+like & 15 \\\hline
+
+Technical debt
+schema & 9 \\\hline
+need & 7 \\\hline
+name & 6 \\\hline
+one & 5 \\\hline
+like & 5 \\\hline
+might & 5 \\\hline
+table & 5 \\\hline
+may & 4 \\\hline
+probably & 4 \\\hline
+new & 4 \\\hline
+
+Technology solution
+Java & 5 \\\hline
+use & 5 \\\hline
+Unsafe & 5 \\\hline
+driver & 4 \\\hline
+cache & 4 \\\hline
+jemalloc & 4 \\\hline
+JNA & 4 \\\hline
+JNI & 4 \\\hline
+Cafeine & 3 \\\hline
+Tiny-LFU & 3 \\\hline
+
+Trade-offs
+would & 27 \\\hline
+think & 18 \\\hline
+tree & 11 \\\hline
+key & 10 \\\hline
+want & 9 \\\hline
+worth & 9 \\\hline
+could & 9 \\\hline
+get & 9 \\\hline
+use & 8 \\\hline
+compaction & 7 \\\hline
+
+User requirement
+column & 24 \\\hline
+need & 16 \\\hline
+row & 14 \\\hline
+data & 13 \\\hline
+defnitions & 10 \\\hline
+user & 9 \\\hline
+group & 9 \\\hline
+name & 9 \\\hline
+get & 8 \\\hline
+want & 8 \\\hline
+

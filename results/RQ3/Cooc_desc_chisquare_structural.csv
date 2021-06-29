@@ -1,0 +1,14 @@
+,Technologysolution,Othersystemarchitecturalsolutions,Architecturalsolutionbenefitsanddrawbacks,Motivationofdesignissue,Architecturaldesignconfiguration,Existingsystemarchitecturedescription,Architecturalcomponentbehaviorandstructure,Assumptions,Userrequirement,QualityAttributerequirement,Run-timequalityissues,Architecturaltactics,Technicaldebt
+Technologysolution,0.0437,0.328,28.8362,0.0718,0.0012,0.6425,0.2637,0.0113,0.0313,0.024,1.4342,0.0047,0.5049
+Othersystemarchitecturalsolutions,0.328,0.9329,0.436,8.2099,0.0046,1.5067,0.0199,0.0625,0.0325,0.2662,0.0569,0.0828,0.103
+Architecturalsolutionbenefitsanddrawbacks,28.8362,0.436,34.174,0.4147,2.8967,0.0341,0.0114,0.4577,5.2458,0.1321,5.4271,0.1262,6.9562
+Motivationofdesignissue,0.0718,8.2099,0.4147,0.1069,0.7458,0.7523,0.2027,0.0022,1.5661,0.0456,1.2508,0.0001,0.4143
+Architecturaldesignconfiguration,0.0012,0.0046,2.8967,0.7458,25.8195,0.1084,0.9009,0.0542,8.8387,1.5149,6.5121,0.0152,0.9568
+Existingsystemarchitecturedescription,0.6425,1.5067,0.0341,0.7523,0.1084,2.265,0.0053,0.2166,0.1578,0.5502,0.4039,0.2542,0.0105
+Architecturalcomponentbehaviorandstructure,0.2637,0.0199,0.0114,0.2027,0.9009,0.0053,1.9497,0.0,0.9242,0.3284,2.7523,13.545,4.2337
+Assumptions,0.0113,0.0625,0.4577,0.0022,0.0542,0.2166,0.0,0.1863,0.2533,0.0249,0.0593,0.1535,4.2682
+Userrequirement,0.0313,0.0325,5.2458,1.5661,8.8387,0.1578,0.9242,0.2533,0.3405,12.882,0.0029,0.2174,1.4196
+QualityAttributerequirement,0.024,0.2662,0.1321,0.0456,1.5149,0.5502,0.3284,0.0249,12.882,0.0102,0.0539,0.0151,0.5987
+Run-timequalityissues,1.4342,0.0569,5.4271,1.2508,6.5121,0.4039,2.7523,0.0593,0.0029,0.0539,14.4142,1.0333,3.4752
+Architecturaltactics,0.0047,0.0828,0.1262,0.0001,0.0152,0.2542,13.545,0.1535,0.2174,0.0151,1.0333,0.1241,0.0575
+Technicaldebt,0.5049,0.103,6.9562,0.4143,0.9568,0.0105,4.2337,4.2682,1.4196,0.5987,3.4752,0.0575,3.8749
