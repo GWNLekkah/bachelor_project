@@ -1,6 +1,6 @@
 # GitIssueFinder
 
-GitIssueFinder should be run with the following arguments:
+GitIssueFinder finds the issue keys belonging to the Git commits that are given in the input file. The program should be given the following arguments:
 ```
 INPUT_FILE_PATH GIT_LOCATION GIT_DIRECTORY ISSUE_PREFIX
 ```
@@ -8,18 +8,16 @@ INPUT_FILE_PATH GIT_LOCATION GIT_DIRECTORY ISSUE_PREFIX
 ## Further explanation of the commands with examples
 
 INPUT_FILE_PATH:
-- path to the input file (e.g. ```./input.txt```)
-- the input file can be created by running the following command inside a Git repostiory: ```git rev-list --parents MAIN_BRANCH_NAME > input.txt```
-- sample input files can be found in the folder ```input_files```
+- This is the path to the input file. The input file is created by running the following command inside a Git repository: ```git rev-list --parents MAIN_BRANCH_NAME > input.txt```. A few sample input files can be found in the folder ```input_files```.
 
 GIT_LOCATION:
-- location of the Git program (e.g. ```C:/ProgramFiles/Git/cmd/git.exe```)
+- This is the location of the command-line version of Git on the machine where the program is executed on. For a typical Windows machine this would be for example: ```C:/ProgramFiles/Git/cmd/git.exe```
 
 GIT_DIRECTORY:
-- directory of the Git repository (e.g. ```C:\Users\arjan\Documents\GitHub\cassandra```)
+- This is the directory of the Git repostiory on the machine where to program is executed on. For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
 
 ISSUE_PREFIX:
-- prefix of the issue tokens used in the issue tracking system (e.g. ```CASSANDRA```)
+- This is the prefix of the issues tokens in the issue tracking system. Apache Cassandra issues have the prefix ```CASSANDRA```.
 
 ## Example sets of arguments
 The following arguments are used to analyze Apache Cassandra:
