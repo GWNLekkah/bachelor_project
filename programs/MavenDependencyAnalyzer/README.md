@@ -5,9 +5,20 @@ MavenDependencyAnalyzer should be run with the following arguments:
 INPUT_FILE_PATH DEPENDENCY_FILENAME GIT_LOCATION GIT_URL REPOSITORY_NAME FILTER
 ```
 
-As an example, the following arguments are used to analyze Apache Cassandra:
+## Example sets of arguments
+The following arguments are used to analyze Apache Cassandra:
 ```
 input/commitsCassandra.txt build.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/cassandra.git cassandra "org.apache.cassandra"
+```
+
+The following arguments are used to analyze Apache Hadoop:
+```
+input/commitsHadoop.txt pom.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/hadoop.git hadoop "org.apache.hadoop"
+```
+
+The following arguments are used to analyze Apache Tajo:
+```
+input/commitsTajo.txt pom.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/tajo.git tajo "org.apache.tajo"
 ```
 
 ## Further explanation of the commands with examples
