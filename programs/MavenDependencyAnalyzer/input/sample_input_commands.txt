@@ -1,3 +1,0 @@
-input/commitsCassandra.txt build.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/cassandra.git cassandra "filter"
-input/commitsHadoop.txt pom.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/hadoop.git hadoop "filter"
-input/commitsTajo.txt pom.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/tajo.git tajo "filter"
