@@ -46,6 +46,7 @@ public class WorkerThread extends Thread {
                 childTags = Commit.toTagArray(child, this.workDirectory + "/" + Arguments.getRepositoryName());
             } catch (Exception exception) {
                 System.err.println("Exception while analyzing commit: " + child);
+                exception.printStackTrace();
             }
 
             // convert parent commit to Tag array
@@ -54,6 +55,7 @@ public class WorkerThread extends Thread {
                 parentTags = Commit.toTagArray(parent, this.workDirectory + "/" + Arguments.getRepositoryName());
             } catch (Exception exception) {
                 System.err.println("Exception while analyzing commit: " + child);
+                exception.printStackTrace();
             }
 
             // check if one of the TagArrays is not created
