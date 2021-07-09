@@ -40,3 +40,9 @@ The following arguments are used to analyze Apache Tajo:
 ```
 input/commitsTajo.txt pom.xml "C:/Program Files/Git/cmd/git.exe" https://github.com/apache/tajo.git tajo "org.apache.tajo"
 ```
+
+## Performance
+Below you can find performance samples, achieved on a laptop with an Intel i7-8750h:
+- Apache Cassandra (26000 commits): 2 hours
+- Apache Hadoop (25000 commits): 2 hours
+- Apache Tajo (2200 commits): 10-15 minutes
