@@ -14,7 +14,7 @@ GIT_LOCATION:
 - This is the location of the command-line version of Git on the machine where the program is executed on. For a typical Windows machine this would be for example: ```C:/ProgramFiles/Git/cmd/git.exe```
 
 GIT_DIRECTORY:
-- This is the directory of the Git repostiory on the machine where to program is executed on. This directory is created by manually cloning the repository that needs to be analyzed. For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
+- This is the directory of the Git repostiory on the machine where to program is executed on. This directory is created by manually cloning the repository that needs to be analyzed (do not clone this repository too deep in the file structure of your system, as this could break the program). For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
 
 ISSUE_PREFIX:
 - This is the prefix of the issues tokens in the issue tracking system. Apache Cassandra issues have the prefix ```CASSANDRA```.
