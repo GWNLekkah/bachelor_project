@@ -159,13 +159,7 @@ public class Commit {
      */
     private static void getFilesFromDirectory(String filename, File directory, ArrayList<File> files) {
         // loop through current directory
-        File[] fileList = directory.listFiles();
-
-        if (fileList == null) {
-            return;
-        }
-
-        for (File file : fileList) {
+        for (File file : Objects.requireNonNull(directory.listFiles())) {
             if (file.isDirectory()) {
                 // search in subdirectory
                 getFilesFromDirectory(filename, file, files);
