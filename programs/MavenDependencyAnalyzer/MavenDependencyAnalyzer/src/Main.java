@@ -22,6 +22,7 @@ public class Main {
         int numOfThreads = (Runtime.getRuntime().availableProcessors() + 1) / 2;
 
         // create output folder
+        System.out.println("Creating output directory...");
         File outputDirectory = new File("./output");
         outputDirectory.mkdirs();
 
@@ -36,12 +37,15 @@ public class Main {
         }
 
         // create tmp folder for working directories of the threads
-        File tmpFile = new File("../tmp");
+        System.out.println("Creating directory for temporary files...");
+        File tmpFile = new File("/tmp_MavenDependencyAnalyzer");
+        Directory.deleteDirectory(tmpFile);
         tmpFile.mkdirs();
 
         // create and start threads
+        System.out.println("Cloning repository...");
         for (int iter = 0; iter < numOfThreads; ++iter) {
-            threads.add(new WorkerThread(workPool, "../tmp/" + Arguments.getRepositoryName() + iter));
+            threads.add(new WorkerThread(workPool, "/tmp_MavenDependencyAnalyzer/" + Arguments.getRepositoryName() + iter));
             threads.get(iter).start();
         }
 
@@ -50,6 +54,7 @@ public class Main {
             threads.get(iter).join();
         }
 
+        System.out.println("Deleting directory for temporary files...");
         Directory.deleteDirectory(tmpFile);
     }
 }

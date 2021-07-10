@@ -20,7 +20,13 @@ public class Directory {
      * @param currentDirectory directory to be deleted
      */
     public static void deleteDirectory(File currentDirectory) {
-        for (File file: Objects.requireNonNull(currentDirectory.listFiles())) {
+        File[] fileList = currentDirectory.listFiles();
+
+        if (fileList == null) {
+            return;
+        }
+
+        for (File file: fileList) {
             if (file.isDirectory()) {
                 // delete subdirectory and its content
                 deleteDirectory(file);
