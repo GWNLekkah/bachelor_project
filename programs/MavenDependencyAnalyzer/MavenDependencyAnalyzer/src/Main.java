@@ -22,11 +22,11 @@ public class Main {
         int numOfThreads = (Runtime.getRuntime().availableProcessors() + 1) / 2;
 
         // create output folder
-        File outputDirectory = new File("../output");
+        File outputDirectory = new File("./output");
         outputDirectory.mkdirs();
 
         // notify user if same name
-        String[] outputFiles = {"../output/diff.txt", "../output/diffAmounts.csv"};
+        String[] outputFiles = {"./output/diff.txt", "./output/diffAmounts.csv"};
         for (String outputFile: outputFiles) {
             File file = new File(outputFile);
             if (file.exists()) {

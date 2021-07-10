@@ -51,13 +51,13 @@ public class WorkPool {
      */
     synchronized void printResults(String diffAmounts, String diff) throws IOException {
         // write diffAmounts to diffAmounts.csv
-        FileWriter fileWriterDiffAmounts = new FileWriter("../output/diffAmounts.csv", true);
+        FileWriter fileWriterDiffAmounts = new FileWriter("./output/diffAmounts.csv", true);
         BufferedWriter bufferedWriterDiffAmounts = new BufferedWriter(fileWriterDiffAmounts);
         bufferedWriterDiffAmounts.write(diffAmounts);
         bufferedWriterDiffAmounts.close();
 
         // write diff to diff.txt
-        FileWriter fileWriterDiff = new FileWriter("../output/diff.txt", true);
+        FileWriter fileWriterDiff = new FileWriter("./output/diff.txt", true);
         BufferedWriter bufferedWriterDiff = new BufferedWriter(fileWriterDiff);
         bufferedWriterDiff.write(diff);
         bufferedWriterDiff.close();
