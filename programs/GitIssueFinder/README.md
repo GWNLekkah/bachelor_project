@@ -14,7 +14,7 @@ GIT_LOCATION:
 - This is the location of the command-line version of Git on the machine where the program is executed on. For a typical Windows machine this would be for example: ```C:/ProgramFiles/Git/cmd/git.exe```
 
 GIT_DIRECTORY:
-- This is the directory of the Git repostiory on the machine where to program is executed on. For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
+- This is the directory of the Git repostiory on the machine where to program is executed on. This directory is created by manually cloning the repository that needs to be analyzed. For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
 
 ISSUE_PREFIX:
 - This is the prefix of the issues tokens in the issue tracking system. Apache Cassandra issues have the prefix ```CASSANDRA```.
@@ -33,6 +33,19 @@ input/commitsHadoop.txt "C:/Program Files/Git/cmd/git.exe" "C:\Users\arjan\Docum
 The following arguments are used to analyze Apache Tajo:
 ```
 input/commitsTajo.txt "C:/Program Files/Git/cmd/git.exe" "C:\Users\arjan\Documents\GitHub\tajo" TAJO
+```
+
+## Output
+The output of the program is a txt file (output.txt). It contains lines with on each line hashes of the analyzed commits. When one or more issue tokens were found for a commits, the tokens will be printed below the commit hash with an indentation. Below is a sample output:
+
+```
+3282f5ecf187ecbb56b8d73ab9a9110c010898b0
+0fd8f0a52fbd69c47d073373abfe7d2437bbd9ca
+    CASSANDRA-16602
+f6d19512c4d79f800371da1e54dfe01cae5d894e
+    CASSANDRA-16588
+4bfe68717d9a419ab6a0b3a681478b39117dee80
+    CASSANDRA-16601
 ```
 
 ## Performance
