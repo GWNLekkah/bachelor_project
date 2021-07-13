@@ -2,7 +2,7 @@
 
 GitIssueFinder finds the issue keys belonging to the Git commits that are given in the input file. The program should be given the following arguments:
 ```
-INPUT_FILE_PATH GIT_LOCATION GIT_DIRECTORY ISSUE_PREFIX
+INPUT_FILE_PATH GIT_LOCATION GIT_DIRECTORY ISSUE_PREFIXES
 ```
 
 ## Further explanation of the commands with examples
@@ -16,8 +16,8 @@ GIT_LOCATION:
 GIT_DIRECTORY:
 - This is the directory of the Git repostiory on the machine where to program is executed on. This directory is created by manually cloning the repository that needs to be analyzed (do not clone this repository too deep in the file structure of your system, as this could break the program). For Apache Cassandra on a Windows machine this could be for example: ```C:\Users\arjan\Documents\GitHub\cassandra```
 
-ISSUE_PREFIX:
-- This is the prefix of the issues tokens in the issue tracking system. Apache Cassandra issues have the prefix ```CASSANDRA```.
+ISSUE_PREFIXES:
+- This is the prefix of the issues tokens in the issue tracking system. Apache Cassandra issues have the prefix ```CASSANDRA```. Some projects, including Apache Hadoop, use multiple issue prefixes. These prefixes can be separated by commas and can look like ```HADOOP,YARN,HDFS,MAPREDUCE```
 
 ## Example sets of arguments
 The following arguments are used to analyze Apache Cassandra:
@@ -27,7 +27,7 @@ input/commitsCassandra.txt "C:/Program Files/Git/cmd/git.exe" "C:\Users\arjan\Do
 
 The following arguments are used to analyze Apache Hadoop:
 ```
-input/commitsHadoop.txt "C:/Program Files/Git/cmd/git.exe" "C:\Users\arjan\Documents\GitHub\hadoop" HADOOP
+input/commitsHadoop.txt "C:/Program Files/Git/cmd/git.exe" "C:\Users\arjan\Documents\GitHub\hadoop" HADOOP,YARN,HDFS,MAPREDUCE
 ```
 
 The following arguments are used to analyze Apache Tajo:
