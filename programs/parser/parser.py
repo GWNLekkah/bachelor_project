@@ -106,8 +106,10 @@ def writeKeywords():
     for key in sorted(word_count):
         fdist = FreqDist(word_count[key])
         keywordFile.write(key + '\n')
-        for item in fdist.most_common(10):
-            keywordFile.write(item[0] + " & " + str(item[1]) + " \\\\\\hline\n")
+        for item in fdist.most_common():
+            keywordFile.write(item[0] + ", " + str(item[1]) + '\n')
+            # use for LaTeX table
+            # keywordFile.write(item[0] + " & " + str(item[1]) + " \\\\\\hline\n")
         keywordFile.write('\n')
     
 def countSentPure(sent): 
