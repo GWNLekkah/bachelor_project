@@ -5,7 +5,7 @@
 public class Arguments {
     private static String GIT_PROGRAM_LOCATION = "";
     private static String GIT_REPOSITORY_LOCATION = "";
-    private static String ISSUE_NAME = "";
+    private static String[] ISSUE_PREFIXES;
     private static String OUTPUT_FILE = "";
 
     public static String getGitProgramLocation() {
@@ -24,12 +24,12 @@ public class Arguments {
         GIT_REPOSITORY_LOCATION = gitRepositoryLocation;
     }
 
-    public static String getIssueName() {
-        return ISSUE_NAME;
+    public static String[] getIssuePrefixes() {
+        return ISSUE_PREFIXES;
     }
 
-    public static void setIssueName(String issueName) {
-        ISSUE_NAME = issueName;
+    public static void setIssuePrefixes(String issuePrefixes) {
+        ISSUE_PREFIXES = issuePrefixes.split(",");
     }
 
     public static String getOutputFile() {

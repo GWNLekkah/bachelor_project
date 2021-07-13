@@ -34,7 +34,7 @@ public class Worker {
      * @param bufferedReader reader that can read the message
      * @return String array of the split message
      */
-    private String[] messageToStringArr(BufferedReader bufferedReader) throws IOException {
+    private String[] messageToStringArr(String prefix, BufferedReader bufferedReader) throws IOException {
         // convert commit message to a StringBuilder
         StringBuilder result = new StringBuilder();
         String line;
@@ -43,7 +43,7 @@ public class Worker {
         }
 
         // split the String at each issue name
-        return result.toString().split(Arguments.getIssueName() + "-");
+        return result.toString().split(prefix + "-");
     }
 
     /**
@@ -51,11 +51,11 @@ public class Worker {
      * @param arr String array that was obtained by splitting the Git message by the issue name
      * @param bufferedWriter output is written to this
      */
-    private void printIssues(String[] arr, BufferedWriter bufferedWriter) throws IOException {
+    private void printIssues(String[] arr, String prefix, BufferedWriter bufferedWriter) throws IOException {
         // for each split, print the issue name and number
         for (int iter = 1; iter < arr.length; ++iter) {
             // write the issue name to the bufferedWriter
-            bufferedWriter.write("    " + Arguments.getIssueName() + "-");
+            bufferedWriter.write("    " + prefix + "-");
 
             // write the issue number to the bufferedWriter
             for (int idx = 0; idx < arr[iter].length(); ++idx) {
@@ -91,15 +91,16 @@ public class Worker {
             // print commit hash to inform user that this commit is being processed
             System.out.println(child);
 
-            BufferedReader bufferedReader = getGitMessageReader(child);
-
             // create writer to write to the output file
             FileWriter fileWriter = new FileWriter(Arguments.getOutputFile(), true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            // write the commit hash and print issues
+            // write the commit hash and print issues of each prefix
             bufferedWriter.write(child + "\n");
-            printIssues(messageToStringArr(bufferedReader), bufferedWriter);
+            for (String prefix : Arguments.getIssuePrefixes()) {
+                BufferedReader bufferedReader = getGitMessageReader(child);
+                printIssues(messageToStringArr(prefix, bufferedReader), prefix, bufferedWriter);
+            }
 
             bufferedWriter.close();
         }

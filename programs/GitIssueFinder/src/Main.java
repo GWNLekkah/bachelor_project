@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         Arguments.setGitProgramLocation(args[1]);
         Arguments.setGitRepositoryLocation(args[2]);
-        Arguments.setIssueName(args[3]);
+        Arguments.setIssuePrefixes(args[3]);
         Arguments.setOutputFile("output.txt");
 
         // delete old output file to overwrite it
