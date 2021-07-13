@@ -100,7 +100,8 @@ def printWordCountBoxPlot():
     # Save the figure
     fig.savefig('fig1.png', bbox_inches='tight')
 
-    # write keywords (top 10 most used words) to output file
+# write keywords to output file
+def writeKeywords():
     keywordFile = open("keywords.txt", "w")
     for key in sorted(word_count):
         fdist = FreqDist(word_count[key])
@@ -413,3 +414,4 @@ if __name__ == "__main__":
     #printIssues()
     getSequences()
     printWordCountBoxPlot()
+    writeKeywords()
